@@ -10,7 +10,7 @@
 // ============================================================================
 // 插件信息
 // ============================================================================
-#define PLUGIN_VERSION "1.0.0"
+#define PLUGIN_VERSION "1.0.1"
 
 public Plugin myinfo =
 {
@@ -88,7 +88,7 @@ static const char  g_sKillType[][] = {
   "*皿*彡",         // 13 被特感击杀
   "→‖",             // 14 穿墙
   "→⊙",             // 15 爆头
-  "(ﾒﾟДﾟ)ﾒ彡",      // 16 被女巫击杀
+  "(°ω°)彡",        // 16 被女巫击杀
   "☠",              // 17 被普通感染者击杀
   "<ʖ͡=::::::⊃",     // 18 电锯
   "v X_X",          // 19 坠落死亡
@@ -764,25 +764,30 @@ void ShowNameColumn(char[][] nameCol, int totalRows, int maxStrLen, float fPosY,
   }
   else
   {
-    int rowsPart1   = 1 + iSlotSplit;
-    int rowsPart2   = totalRows - rowsPart1;
+    // 双槽位拆分: 两个数组都保持totalRows行, 不负责的行用空格占位
+    // 与原始emshud_info脚本一致, 保证两个槽位行数相同, 避免对齐错位
+    char[][] sPart1 = new char[totalRows][maxStrLen];
+    char[][] sPart2 = new char[totalRows][maxStrLen];
 
-    char[][] sPart1 = new char[rowsPart1][maxStrLen];
-    char[][] sPart2 = new char[rowsPart2][maxStrLen];
+    for (int i = 0; i < totalRows; i++)
+    {
+      if (i <= iSlotSplit)
+      {
+        // 前半段(标题行 + 前iSlotSplit行数据): 第一个槽位显示, 第二个槽位占位
+        strcopy(sPart1[i], maxStrLen, nameCol[i]);
+        strcopy(sPart2[i], maxStrLen, " ");
+      }
+      else
+      {
+        // 后半段(剩余数据行): 第一个槽位占位, 第二个槽位显示
+        strcopy(sPart1[i], maxStrLen, " ");
+        strcopy(sPart2[i], maxStrLen, nameCol[i]);
+      }
+    }
 
-    for (int i = 0; i < rowsPart1; i++)
-      strcopy(sPart1[i], maxStrLen, nameCol[i]);
-    for (int i = 0; i < rowsPart2; i++)
-      strcopy(sPart2[i], maxStrLen, nameCol[rowsPart1 + i]);
-
-    char sName1[256], sName2Body[256], sName2[256];
-    ImplodeColumnStrings(sPart1, rowsPart1, maxStrLen, sName1, sizeof(sName1));
-    ImplodeColumnStrings(sPart2, rowsPart2, maxStrLen, sName2Body, sizeof(sName2Body));
-
-    sName2[0] = '\0';
-    for (int i = 0; i < rowsPart1; i++)
-      StrCat(sName2, sizeof(sName2), "\n");
-    StrCat(sName2, sizeof(sName2), sName2Body);
+    char sName1[256], sName2[256];
+    ImplodeColumnStrings(sPart1, totalRows, maxStrLen, sName1, sizeof(sName1));
+    ImplodeColumnStrings(sPart2, totalRows, maxStrLen, sName2, sizeof(sName2));
 
     HUDSetLayoutSafe(HUD_RIGHT_TOP, hudFlags, sName1);
     HUDPlace(HUD_RIGHT_TOP, fNameX, fPosY, 1.0, fHeight);
