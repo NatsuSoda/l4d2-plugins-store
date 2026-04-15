@@ -1,0 +1,41 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Signatures"
+		{
+			"CTerrorPlayer_OnVomitedUpon"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer13OnVomitedUponEPS_b"
+				"windows" 	"\x55\x8B\xEC\x83\xEC\x2A\x53\x56\x57\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x84\xC0\x74\x2A\x8B\x06\x8B\x90"				
+				/* 55 8B EC 83 EC ?  53 56 57 8B F1 E8 ?  ?  ? ?  84 C0 74 ? 8B 06 8B 90  */
+			}
+			"CSpitterProjectile_Detonate"
+			{
+				"library"	"server"
+				"linux"		"@_ZN18CSpitterProjectile8DetonateEv"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x94\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B\xD9" 				
+				/* 55 8B EC 81 EC 94 ? ? ? A1 58 32 7C ? ? C5 ? 45 FC 53 8B D9 57 89 9D 78*/
+			}
+			"Weapon_Drop"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer11Weapon_DropEP17CBaseCombatWeaponPK6VectorS4_"
+				"windows"	"\x55\x8B\x2A\x2A\x45\x2A\x2A\x2A\x2A\x8B\x7D\x08\x8B\x2A\x2A\x4D"
+				/*55 8B ? ? 45 ? ? ? ? 8B 7D 08 8B ? ? 4D */
+			}
+			
+			/* CTerrorPlayer::RoundRespawn */
+			"RoundRespawn"
+			{
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer12RoundRespawnEv"
+				"windows"	"\x56\x8B\xF1\xE8\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x84\xC0\x75"
+				/* 56 8B F1 E8 ? ? ? ? E8 ? ? ? ? 84 C0 75	*/
+				/* previous function in vtable has a string */
+			}
+			
+		}
+	}
+}
