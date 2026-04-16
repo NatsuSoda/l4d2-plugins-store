@@ -1628,7 +1628,8 @@ function VSLib::HUD::GetLayout()
 
 
 // Load the HUD table
-HUDSetLayout( ::VSLib.HUD._hud );
+// HUDSetLayout被禁用以避免与其他HUD插件冲突
+// HUDSetLayout( ::VSLib.HUD._hud );
 
 
 // Add a weak reference to the global table.
