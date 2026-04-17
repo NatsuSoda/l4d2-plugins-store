@@ -1,0 +1,815 @@
+//----------紫夜超级变异趣味坦克插件----------------------||
+//----------配置文件修改 (YY/MM/DD): [2022/06/25] ---------------||
+//----------BY: 紫夜的眼睛----------------------||
+
+"ZKPTK_SuperTank"
+{
+	"tank1"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"烟幕坦坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank2"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"杀手坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank3"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"瞬移坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank4"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"厚血坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank5"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"唾沫坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank6"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"自愈坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank7"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"浴火坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank8"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"冰霜坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank9"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"Jockey坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank10"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"幽灵坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank11"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"地震坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank12"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"女巫坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank13"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"防御坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank14"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"凌波微步坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank15"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"跳跃坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank16"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"吸力坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank17"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"召唤坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank18"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"黑屏坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank19"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"吸血坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank20"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"石块追踪坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank21"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"分身分血坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank22"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"涅槃重生坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank23"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"一伤皆伤坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank24"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"闪速坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank25"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"先夺后返坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank26"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"Hunter坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank27"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"Smoker坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank28"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"Boomer坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank29"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"Charger坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank30"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"放电坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank31"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"防弹坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank32"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"防刀坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank33"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"善良坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank34"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"反伤坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank35"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"移血坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank36"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"均血坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank37"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"爱恨坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank38"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"天使坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank39"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"魔鬼坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank40"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"打回娘胎坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank41"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"下毒坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank42"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"流血坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank43"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"缓慢坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank44"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"抢夺坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank45"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"策反坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank46"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"傀儡坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank47"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"同归于尽坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank48"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"越战越强坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank49"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"复血坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank50"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"孪生坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank51"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"君威坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank52"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"聚集坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank53"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"推开坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank54"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"落石坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank55"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"爆炸坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank56"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"致盲坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank57"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"冰人坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank58"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"火伤坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank59"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"换位坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank60"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"环盾坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank61"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"真假坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank62"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"医生坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank63"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"独尊坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank64"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"小偷坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank65"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"哑火坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank66"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"光棱坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank67"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"复活坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank68"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"四高坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank69"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"化身六特坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank70"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"化身女巫坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank71"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"巨石坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank72"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"封印坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank73"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"飞罐坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank74"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"力量坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank75"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"强吸坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank76"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"扔车坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank77"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"恶魔坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank78"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"月球坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank79"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"反向坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank80"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"远视坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank81"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"投石坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank82"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"抛起坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank83"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"乱位坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank84"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"恐慌坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank85"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"呕吐坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank86"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"派礼坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank87"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"飞球坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank88"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"暴风石坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank89"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"交通灯坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank90"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"失重坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank91"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"捶地坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank92"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"蹦跳坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank93"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"金钟罩坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank94"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"入侵坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank95"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"雷击坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank96"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"绿屏坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank97"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"鬼火坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank98"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"旋走石坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank99"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"烟花坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank100"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"法宝坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+	"tank101"
+	{
+		"ShowMe"	 		"1"
+		"TankName"	 	"自旋坦克"
+		"Ignite"	 		"0"
+		"AddHealth"			"0"
+	}
+	
+}
