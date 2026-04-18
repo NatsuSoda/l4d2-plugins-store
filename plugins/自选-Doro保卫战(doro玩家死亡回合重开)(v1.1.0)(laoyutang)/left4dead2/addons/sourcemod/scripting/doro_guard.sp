@@ -990,9 +990,12 @@ public void Event_PlayerBotReplace(Event event, const char[] name, bool dontBroa
   if (!IsClientDoro(player))
     return;
 
-  // 将发光从人类转移到 bot
+  // 移除人类身上的发光
   RemoveDoroGlow(player);
-  ApplyDoroGlow(bot);
+
+  // 延迟为 bot 应用发光（事件触发时 bot 可能尚未完成初始化，直接设置会被引擎覆盖）
+  int botUserId2 = GetClientUserId(bot);
+  CreateTimer(0.5, Timer_ApplyGlowToClient, botUserId2);
 
   char sName[MAX_NAME_LENGTH];
   GetClientName(player, sName, sizeof(sName));
@@ -1034,9 +1037,12 @@ public void Event_BotPlayerReplace(Event event, const char[] name, bool dontBroa
   // 更新 Doro client index
   g_iDoroClient = player;
 
-  // 将发光从 bot 转移到人类
+  // 移除 bot 身上的发光
   RemoveDoroGlow(bot);
-  ApplyDoroGlow(player);
+
+  // 延迟为回归的人类玩家应用发光（事件触发时玩家可能尚未完成接管，直接设置会被引擎覆盖）
+  int playerUserId2 = GetClientUserId(player);
+  CreateTimer(0.5, Timer_ApplyGlowToClient, playerUserId2);
 
   char sName[MAX_NAME_LENGTH];
   GetClientName(player, sName, sizeof(sName));
@@ -1055,6 +1061,33 @@ public void Event_BotPlayerReplace(Event event, const char[] name, bool dontBroa
  * @param timer  定时器句柄
  * @return       Plugin_Stop 停止定时器
  */
+/**
+ * 延迟为指定玩家应用 Doro 发光效果的定时器回调
+ * 用于闲置/回归事件中，等待引擎完成 bot/玩家切换后再设置发光属性
+ * 通过 UserID 传递目标，确保玩家在延迟期间断开不会导致错误
+ *
+ * @param timer   定时器句柄
+ * @param userId  目标玩家的 UserID
+ * @return        Plugin_Stop 停止定时器
+ */
+public Action Timer_ApplyGlowToClient(Handle timer, int userId)
+{
+  int client = GetClientOfUserId(userId);
+  if (client <= 0 || !IsClientInGame(client))
+    return Plugin_Stop;
+
+  // 再次确认当前仍有 Doro 且该 client 是 Doro 对应的实体
+  if (!HasActiveDoro())
+    return Plugin_Stop;
+
+  if (IsClientDoro(client))
+  {
+    ApplyDoroGlow(client);
+  }
+
+  return Plugin_Stop;
+}
+
 public Action Timer_RestartRound(Handle timer)
 {
   RestartRound();
