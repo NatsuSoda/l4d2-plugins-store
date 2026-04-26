@@ -37,7 +37,7 @@ public Plugin myinfo =
 
 // 击杀列表HUD位置
 #define KILL_HUD_X       0.60
-#define KILL_HUD_Y       0.10
+#define KILL_HUD_Y       0.09
 #define KILL_HUD_WIDTH   0.39
 #define KILL_HUD_HEIGHT  0.04
 
@@ -718,7 +718,7 @@ void ShowRankingHUD()
     AlignColumnRight(sCol[c], totalRows, maxStrLen);
 
   // 合并各列为换行分隔的字符串并显示
-  float fPosY   = 0.03;
+  float fPosY   = 0.05;
   float fHeight = 0.035 * totalRows + 0.0035 * totalRows;
 
   // 显示前3列(特感、丧尸、友伤)
