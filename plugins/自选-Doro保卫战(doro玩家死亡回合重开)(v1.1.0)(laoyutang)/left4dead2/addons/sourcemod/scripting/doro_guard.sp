@@ -101,6 +101,9 @@ public void OnPluginStart()
   // 注册管理员设置指令
   RegAdminCmd("sm_setdoro", Command_SetDoro, ADMFLAG_GENERIC, "管理员直接设置Doro玩家");
 
+  // 注册管理员清除指令
+  RegAdminCmd("sm_resetdoro", Command_ResetDoro, ADMFLAG_GENERIC, "管理员清除当前Doro身份，恢复普通模式");
+
   // 钩住游戏事件
   HookEvent("round_start", Event_RoundStart, EventHookMode_PostNoCopy);
   HookEvent("map_transition", Event_MapTransition, EventHookMode_PostNoCopy);
@@ -343,6 +346,35 @@ void ResetSignup()
 /* ========================================================================
  *  管理员设置系统 (!setdoro 指令)
  * ======================================================================== */
+
+/**
+ * 管理员使用 !resetdoro 指令的回调
+ * 直接清除当前 Doro 身份，恢复普通模式，允许重新报名
+ *
+ * @param client  使用指令的管理员 client index
+ * @param args    指令参数（未使用）
+ * @return        Plugin_Handled 阻止指令传播
+ */
+public Action Command_ResetDoro(int client, int args)
+{
+  if (client <= 0 || !IsClientInGame(client))
+    return Plugin_Handled;
+
+  if (!HasActiveDoro())
+  {
+    PrintToChat(client, "%s 当前没有Doro在场。", PLUGIN_TAG);
+    return Plugin_Handled;
+  }
+
+  // 清除正在进行的报名
+  if (g_bSignupActive)
+    ResetSignup();
+
+  ClearDoro(true, "管理员已清除Doro身份。");
+  PrintToChatAll("%s 玩家可使用 \x04!doro\x01 重新报名。", PLUGIN_TAG);
+
+  return Plugin_Handled;
+}
 
 /**
  * 管理员使用 !setdoro 指令的回调
